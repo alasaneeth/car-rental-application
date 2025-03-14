@@ -34,9 +34,12 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
+          {/* Render Children component when singen in by an user */}
           <SignedIn>
             {children}
           </SignedIn>
+          {/* --Render log in page when logout or not log in by an user 
+          -- Centerd login page using tailwind css class */}
           <SignedOut>
             <div className="flex items-center justify-center h-screen">
               <SignIn />
