@@ -7,6 +7,7 @@ import {
   SignedOut,
   SignIn
 } from '@clerk/nextjs'
+import NavBar from "@/components/NavBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
         >
           {/* Render Children component when singen in by an user */}
           <SignedIn>
+            <NavBar/>
             {children}
           </SignedIn>
           {/* --Render log in page when logout or not log in by an user 
@@ -44,7 +46,6 @@ export default function RootLayout({
             <div className="flex items-center justify-center h-screen">
               <SignIn />
             </div>
-
           </SignedOut>
 
         </body>
