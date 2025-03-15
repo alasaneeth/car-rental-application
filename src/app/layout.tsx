@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono,Outfit } from "next/font/google";
 import "./globals.css";
 import {
   ClerkProvider,
@@ -9,7 +9,7 @@ import {
 } from '@clerk/nextjs'
 import NavBar from "@/components/NavBar";
 
-const geistSans = Geist({
+const geistSans = Outfit({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
