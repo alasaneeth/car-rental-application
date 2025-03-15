@@ -2,7 +2,7 @@ import React from 'react'
 
 const SearchInput = () => {
     return (
-        <div>
+        <div className='mt-5'>
             <h2 className='text-center text-[20px]
       text-gray-400'>
                 Lets search with your need</h2>
